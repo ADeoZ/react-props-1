@@ -1,4 +1,6 @@
 .card-body-stars {
+  display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   width: 180px;
   height: 80px;
@@ -10,6 +12,7 @@
 }
 
 .card-body-stars::before {
+  width: 100%;
   content: 'Рейтинг Фильма';
   font-weight: bold;
   font-size: 18px;

@@ -8,17 +8,15 @@ export default function Stars({ count }) {
   };
 
   const starsElements = [];
-  for (let i = 0; i < count ; i += 1) {
-    starsElements.push(<Star key={nanoid(10)}/>);
+  for (let i = 0; i < count; i += 1) {
+    starsElements.push(<Star key={nanoid(10)} />);
   }
-  
+
   console.log(count);
 
   return (
     <ul className="card-body-stars u-clearfix">
-      <li>
-        {starsElements}
-      </li>
+      {starsElements}
     </ul>
   );
 }
